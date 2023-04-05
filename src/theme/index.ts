@@ -6,7 +6,7 @@ export default {
 			gray_3: '#5C6265',
 			gray_4: '#B9BBBC',
 			gray_5: '#DDDEDF',
-			gray_6: '#DDDEDF',
+			gray_6: '#EFF0F0',
 			gray_7: '#FAFAFA',
 			white: '#FFFFFF',
 		},
@@ -35,5 +35,11 @@ export default {
 			md: 24,
 			lg: 32,
 		},
+	},
+	line_height: {
+		xs: 15,
+		sm: 18,
+		md: 20,
+		lg: 35,
 	},
 }
