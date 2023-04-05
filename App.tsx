@@ -10,6 +10,7 @@ import theme from '@theme'
 import { Loading } from '@components/Loading'
 
 import { HomeScreen } from '@screens/home'
+import { StatisticScreen } from '@screens/statistic'
 
 export default function App() {
 	const [fontsLoaded] = useFonts({
@@ -19,7 +20,7 @@ export default function App() {
 
 	return (
 		<ThemeProvider theme={theme}>
-			{fontsLoaded ? <HomeScreen /> : <Loading />}
+			{fontsLoaded ? <StatisticScreen /> : <Loading />}
 			<StatusBar
 				barStyle="dark-content"
 				backgroundColor="transparent"
