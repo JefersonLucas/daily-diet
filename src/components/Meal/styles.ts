@@ -1,7 +1,7 @@
 import styled from 'styled-components/native'
 import { MealStatus } from '.'
 
-export const Container = styled.View`
+export const Container = styled.Pressable`
 	width: 100%;
 	height: 55px;
 
