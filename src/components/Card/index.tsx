@@ -1,7 +1,10 @@
-import * as S from './styles'
-import { FontSizeTitle } from 'src/dtos/StylesDTO'
-import { Typography } from '@components/Typography'
 import { ViewProps } from 'react-native'
+
+import { Typography } from '@components/Typography'
+
+import { FontSizeTitle } from '@dtos/StylesDTO'
+
+import * as S from './styles'
 
 export type CardColor = { bg?: 'gray' | 'green' | 'red' }
 export type TextSize = { titleFontSize?: FontSizeTitle }
