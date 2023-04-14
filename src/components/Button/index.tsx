@@ -18,10 +18,17 @@ export function Button({
 	...props
 }: ButtonProps) {
 	return (
-		<Container type={type} isActive={isActive} {...props}>
+		<Container
+			type={type}
+			isActive={isActive}
+			disabled={isActive ? false : true}
+			{...props}
+		>
 			{props.icon && props.icon}
+
 			<Typography
 				color={type === 'solid' ? 'white' : 'gray_1'}
+				family="bold"
 				style={{ marginHorizontal: 12 }}
 			>
 				{props.title}
