@@ -48,4 +48,6 @@ export const Container = styled.Text<TypographyStyle>`
 		if (color === 'white') return colors.base.white
 		else return colors.base.gray_1
 	}};
+
+	text-align: ${({ textAlign }) => (textAlign ? textAlign : 'left')};
 `

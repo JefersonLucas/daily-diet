@@ -9,8 +9,7 @@ import theme from '@theme'
 
 import { Loading } from '@components/Loading'
 
-import { HomeScreen } from '@screens/home'
-import { StatisticScreen } from '@screens/statistic'
+import { Routes } from '@routes/index'
 
 export default function App() {
 	const [fontsLoaded] = useFonts({
@@ -20,12 +19,13 @@ export default function App() {
 
 	return (
 		<ThemeProvider theme={theme}>
-			{fontsLoaded ? <StatisticScreen /> : <Loading />}
 			<StatusBar
 				barStyle="dark-content"
 				backgroundColor="transparent"
 				translucent
 			/>
+
+			{fontsLoaded ? <Routes /> : <Loading />}
 		</ThemeProvider>
 	)
 }

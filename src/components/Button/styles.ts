@@ -16,12 +16,14 @@ export const Container = styled.TouchableOpacity<ButtonType>`
 	border-color: ${({ theme }) => theme.colors.base.gray_1};
 
 	background-color: ${({ theme, type, isActive }) => {
-		return isActive
-			? type === 'solid'
+		if (type === 'solid') {
+			return isActive
 				? theme.colors.base.gray_1
-				: theme.colors.base.gray_5
-			: type === 'outline'
-				? 'transparent' // prettier-ignore
-				: theme.colors.base.gray_2 // prettier-ignore
+				: theme.colors.base.gray_2
+		}
+
+		if (type === 'outline') {
+			return isActive ? theme.colors.base.white : theme.colors.base.gray_5
+		}
 	}};
 `

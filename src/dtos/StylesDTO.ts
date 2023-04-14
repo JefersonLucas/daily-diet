@@ -17,3 +17,5 @@ export type ColorsBase = 'gray_1' | 'gray_2' | 'gray_3' | 'gray_4' | 'gray_5' | 
 
 // prettier-ignore
 export type ColorsBrand = 'red_dark' | 'red_mid' | 'red_light' | 'green_dark' | 'green_mid' | 'green_light'
+
+export type TextAlign = 'center' | 'auto' | 'left' | 'right' | 'justify'

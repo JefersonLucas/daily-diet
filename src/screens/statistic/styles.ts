@@ -1,8 +1,13 @@
 import styled from 'styled-components/native'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import { StatisticBackground } from '.'
 
-export const Container = styled.View`
+export const Container = styled(SafeAreaView)<StatisticBackground>`
 	flex: 1;
-	background-color: ${({ theme }) => theme.colors.brand.green_light};
+	background-color: ${({ theme, bg }) =>
+		bg === 'green'
+			? theme.colors.brand.green_light
+			: theme.colors.brand.red_light};
 `
 
 export const Row = styled.View`

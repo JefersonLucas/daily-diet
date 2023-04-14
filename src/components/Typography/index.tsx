@@ -1,6 +1,6 @@
 import { TextProps } from 'react-native'
 
-import * as StylesDTO from 'src/dtos/StylesDTO'
+import * as StylesDTO from '@dtos/StylesDTO'
 
 import { Container } from './styles'
 
@@ -9,6 +9,7 @@ export type TypographyStyle = {
 	family?: StylesDTO.Family
 	lineHeight?: StylesDTO.LineHeight
 	color?: StylesDTO.Color
+	textAlign?: StylesDTO.TextAlign
 }
 
 type TypographyProps = TextProps & TypographyStyle & {}
