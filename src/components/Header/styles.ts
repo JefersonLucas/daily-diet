@@ -4,7 +4,7 @@ import avatar from 'assets/avatar.png'
 
 export const Container = styled.View`
 	width: 100%;
-	margin: 64px 0 32px;
+	margin: 32px 0;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
